@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Task1ModelStoreContainer" CdmEntityContainer="Task1Entities">
+    <EntitySetMapping Name="Tasks">
+      <EntityTypeMapping TypeName="Task1Model.Task">
+        <MappingFragment StoreEntitySet="Tasks">
+          <ScalarProperty Name="userr_id" ColumnName="userr_id" />
+          <ScalarProperty Name="task_id" ColumnName="task_id" />
+          <ScalarProperty Name="task_title" ColumnName="task_title" />
+          <ScalarProperty Name="task_desc" ColumnName="task_desc" />
+          <ScalarProperty Name="task_state" ColumnName="task_state" />
+          <ScalarProperty Name="duedate" ColumnName="duedate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="Task1Model.user">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="userr_id" ColumnName="userr_id" />
+          <ScalarProperty Name="userr_name" ColumnName="userr_name" />
+          <ScalarProperty Name="user_pass" ColumnName="user_pass" />
+          <ScalarProperty Name="user_email" ColumnName="user_email" />
+          <ScalarProperty Name="rolee" ColumnName="rolee" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Task1Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Tasks">
+          <Key>
+            <PropertyRef Name="task_id" />
+          </Key>
+          <Property Name="userr_id" Type="int" />
+          <Property Name="task_id" Type="int" Nullable="false" />
+          <Property Name="task_title" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="task_desc" Type="nvarchar" MaxLength="30" />
+          <Property Name="task_state" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="duedate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="users">
+          <Key>
+            <PropertyRef Name="userr_id" />
+          </Key>
+          <Property Name="userr_id" Type="int" Nullable="false" />
+          <Property Name="userr_name" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="user_pass" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="user_email" Type="nvarchar" MaxLength="20" />
+          <Property Name="rolee" Type="nvarchar" MaxLength="25" />
+        </EntityType>
+        <Association Name="FK__Tasks__userr_id__3E52440B">
+          <End Role="users" Type="Self.users" Multiplicity="0..1" />
+          <End Role="Tasks" Type="Self.Tasks" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="users">
+              <PropertyRef Name="userr_id" />
+            </Principal>
+            <Dependent Role="Tasks">
+              <PropertyRef Name="userr_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Task1ModelStoreContainer">
+          <EntitySet Name="Tasks" EntityType="Self.Tasks" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="users" EntityType="Self.users" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Tasks__userr_id__3E52440B" Association="Self.FK__Tasks__userr_id__3E52440B">
+            <End Role="users" EntitySet="users" />
+            <End Role="Tasks" EntitySet="Tasks" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Task1Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Task">
+          <Key>
+            <PropertyRef Name="task_id" />
+          </Key>
+          <Property Name="userr_id" Type="Int32" />
+          <Property Name="task_id" Type="Int32" Nullable="false" />
+          <Property Name="task_title" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="task_desc" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="task_state" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="duedate" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="user" Relationship="Self.FK__Tasks__userr_id__3E52440B" FromRole="Tasks" ToRole="users" />
+        </EntityType>
+        <EntityType Name="user">
+          <Key>
+            <PropertyRef Name="userr_id" />
+          </Key>
+          <Property Name="userr_id" Type="Int32" Nullable="false" />
+          <Property Name="userr_name" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="user_pass" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="user_email" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="rolee" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Tasks" Relationship="Self.FK__Tasks__userr_id__3E52440B" FromRole="users" ToRole="Tasks" />
+        </EntityType>
+        <Association Name="FK__Tasks__userr_id__3E52440B">
+          <End Role="users" Type="Self.user" Multiplicity="0..1" />
+          <End Role="Tasks" Type="Self.Task" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="users">
+              <PropertyRef Name="userr_id" />
+            </Principal>
+            <Dependent Role="Tasks">
+              <PropertyRef Name="userr_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Task1Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Tasks" EntityType="Self.Task" />
+          <EntitySet Name="users" EntityType="Self.user" />
+          <AssociationSet Name="FK__Tasks__userr_id__3E52440B" Association="Self.FK__Tasks__userr_id__3E52440B">
+            <End Role="users" EntitySet="users" />
+            <End Role="Tasks" EntitySet="Tasks" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Task1ModelStoreContainer" CdmEntityContainer="Task1Entities">
+          <EntitySetMapping Name="Tasks">
+            <EntityTypeMapping TypeName="Task1Model.Task">
+              <MappingFragment StoreEntitySet="Tasks">
+                <ScalarProperty Name="userr_id" ColumnName="userr_id" />
+                <ScalarProperty Name="task_id" ColumnName="task_id" />
+                <ScalarProperty Name="task_title" ColumnName="task_title" />
+                <ScalarProperty Name="task_desc" ColumnName="task_desc" />
+                <ScalarProperty Name="task_state" ColumnName="task_state" />
+                <ScalarProperty Name="duedate" ColumnName="duedate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="users">
+            <EntityTypeMapping TypeName="Task1Model.user">
+              <MappingFragment StoreEntitySet="users">
+                <ScalarProperty Name="userr_id" ColumnName="userr_id" />
+                <ScalarProperty Name="userr_name" ColumnName="userr_name" />
+                <ScalarProperty Name="user_pass" ColumnName="user_pass" />
+                <ScalarProperty Name="user_email" ColumnName="user_email" />
+                <ScalarProperty Name="rolee" ColumnName="rolee" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

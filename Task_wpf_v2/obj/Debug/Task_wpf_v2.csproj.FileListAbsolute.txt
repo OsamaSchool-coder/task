@@ -1,0 +1,52 @@
+C:\Users\sd\Desktop\Task_wpf_v2\bin\Debug\Task_wpf_v2.exe.config
+C:\Users\sd\Desktop\Task_wpf_v2\bin\Debug\Task_wpf_v2.exe
+C:\Users\sd\Desktop\Task_wpf_v2\bin\Debug\Task_wpf_v2.pdb
+C:\Users\sd\Desktop\Task_wpf_v2\bin\Debug\EntityFramework.dll
+C:\Users\sd\Desktop\Task_wpf_v2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\sd\Desktop\Task_wpf_v2\bin\Debug\EntityFramework.xml
+C:\Users\sd\Desktop\Task_wpf_v2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\sd\Desktop\Task_wpf_v2\obj\Debug\Task_wpf_v2.csproj.AssemblyReference.cache
+C:\Users\sd\Desktop\Task_wpf_v2\obj\Debug\Task_wpf_v2.csproj.SuggestedBindingRedirects.cache
+C:\Users\sd\Desktop\Task_wpf_v2\obj\Debug\emp.g.cs
+C:\Users\sd\Desktop\Task_wpf_v2\obj\Debug\MainWindow.g.cs
+C:\Users\sd\Desktop\Task_wpf_v2\obj\Debug\manager.g.cs
+C:\Users\sd\Desktop\Task_wpf_v2\obj\Debug\App.g.cs
+C:\Users\sd\Desktop\Task_wpf_v2\obj\Debug\Task_wpf_v2_Content.g.cs
+C:\Users\sd\Desktop\Task_wpf_v2\obj\Debug\Task_wpf_v2_MarkupCompile.cache
+C:\Users\sd\Desktop\Task_wpf_v2\obj\Debug\Task_wpf_v2_MarkupCompile.lref
+C:\Users\sd\Desktop\Task_wpf_v2\obj\Debug\emp.baml
+C:\Users\sd\Desktop\Task_wpf_v2\obj\Debug\MainWindow.baml
+C:\Users\sd\Desktop\Task_wpf_v2\obj\Debug\manager.baml
+C:\Users\sd\Desktop\Task_wpf_v2\obj\Debug\Task_wpf_v2.g.resources
+C:\Users\sd\Desktop\Task_wpf_v2\obj\Debug\Task_wpf_v2.Properties.Resources.resources
+C:\Users\sd\Desktop\Task_wpf_v2\obj\Debug\Task_wpf_v2.csproj.GenerateResource.cache
+C:\Users\sd\Desktop\Task_wpf_v2\obj\Debug\Task_wpf_v2.csproj.CoreCompileInputs.cache
+C:\Users\sd\Desktop\Task_wpf_v2\obj\Debug\Task_wpf_v2.csproj.CopyComplete
+C:\Users\sd\Desktop\Task_wpf_v2\obj\Debug\Task_wpf_v2.exe
+C:\Users\sd\Desktop\Task_wpf_v2\obj\Debug\Task_wpf_v2.pdb
+C:\Users\sd\Desktop\osama samy J0323128\Task_wpf_v2\bin\Debug\Task_wpf_v2.exe.config
+C:\Users\sd\Desktop\osama samy J0323128\Task_wpf_v2\bin\Debug\Task_wpf_v2.exe
+C:\Users\sd\Desktop\osama samy J0323128\Task_wpf_v2\bin\Debug\Task_wpf_v2.pdb
+C:\Users\sd\Desktop\osama samy J0323128\Task_wpf_v2\bin\Debug\EntityFramework.dll
+C:\Users\sd\Desktop\osama samy J0323128\Task_wpf_v2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\sd\Desktop\osama samy J0323128\Task_wpf_v2\bin\Debug\EntityFramework.xml
+C:\Users\sd\Desktop\osama samy J0323128\Task_wpf_v2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\sd\Desktop\osama samy J0323128\Task_wpf_v2\obj\Debug\Task_wpf_v2.csproj.AssemblyReference.cache
+C:\Users\sd\Desktop\osama samy J0323128\Task_wpf_v2\obj\Debug\Task_wpf_v2.csproj.SuggestedBindingRedirects.cache
+C:\Users\sd\Desktop\osama samy J0323128\Task_wpf_v2\obj\Debug\emp.g.cs
+C:\Users\sd\Desktop\osama samy J0323128\Task_wpf_v2\obj\Debug\MainWindow.g.cs
+C:\Users\sd\Desktop\osama samy J0323128\Task_wpf_v2\obj\Debug\manager.g.cs
+C:\Users\sd\Desktop\osama samy J0323128\Task_wpf_v2\obj\Debug\App.g.cs
+C:\Users\sd\Desktop\osama samy J0323128\Task_wpf_v2\obj\Debug\Task_wpf_v2_Content.g.cs
+C:\Users\sd\Desktop\osama samy J0323128\Task_wpf_v2\obj\Debug\Task_wpf_v2_MarkupCompile.cache
+C:\Users\sd\Desktop\osama samy J0323128\Task_wpf_v2\obj\Debug\Task_wpf_v2_MarkupCompile.lref
+C:\Users\sd\Desktop\osama samy J0323128\Task_wpf_v2\obj\Debug\emp.baml
+C:\Users\sd\Desktop\osama samy J0323128\Task_wpf_v2\obj\Debug\MainWindow.baml
+C:\Users\sd\Desktop\osama samy J0323128\Task_wpf_v2\obj\Debug\manager.baml
+C:\Users\sd\Desktop\osama samy J0323128\Task_wpf_v2\obj\Debug\Task_wpf_v2.g.resources
+C:\Users\sd\Desktop\osama samy J0323128\Task_wpf_v2\obj\Debug\Task_wpf_v2.Properties.Resources.resources
+C:\Users\sd\Desktop\osama samy J0323128\Task_wpf_v2\obj\Debug\Task_wpf_v2.csproj.GenerateResource.cache
+C:\Users\sd\Desktop\osama samy J0323128\Task_wpf_v2\obj\Debug\Task_wpf_v2.csproj.CoreCompileInputs.cache
+C:\Users\sd\Desktop\osama samy J0323128\Task_wpf_v2\obj\Debug\Task_wpf_v2.csproj.CopyComplete
+C:\Users\sd\Desktop\osama samy J0323128\Task_wpf_v2\obj\Debug\Task_wpf_v2.exe
+C:\Users\sd\Desktop\osama samy J0323128\Task_wpf_v2\obj\Debug\Task_wpf_v2.pdb

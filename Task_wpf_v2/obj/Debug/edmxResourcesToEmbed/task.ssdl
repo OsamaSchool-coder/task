@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Task1Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Tasks">
+    <Key>
+      <PropertyRef Name="task_id" />
+    </Key>
+    <Property Name="userr_id" Type="int" />
+    <Property Name="task_id" Type="int" Nullable="false" />
+    <Property Name="task_title" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="task_desc" Type="nvarchar" MaxLength="30" />
+    <Property Name="task_state" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="duedate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="users">
+    <Key>
+      <PropertyRef Name="userr_id" />
+    </Key>
+    <Property Name="userr_id" Type="int" Nullable="false" />
+    <Property Name="userr_name" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="user_pass" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="user_email" Type="nvarchar" MaxLength="20" />
+    <Property Name="rolee" Type="nvarchar" MaxLength="25" />
+  </EntityType>
+  <Association Name="FK__Tasks__userr_id__3E52440B">
+    <End Role="users" Type="Self.users" Multiplicity="0..1" />
+    <End Role="Tasks" Type="Self.Tasks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="userr_id" />
+      </Principal>
+      <Dependent Role="Tasks">
+        <PropertyRef Name="userr_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Task1ModelStoreContainer">
+    <EntitySet Name="Tasks" EntityType="Self.Tasks" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="users" EntityType="Self.users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Tasks__userr_id__3E52440B" Association="Self.FK__Tasks__userr_id__3E52440B">
+      <End Role="users" EntitySet="users" />
+      <End Role="Tasks" EntitySet="Tasks" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
